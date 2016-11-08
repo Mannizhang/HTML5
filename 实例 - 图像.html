@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实例 - 图像</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="200" style="border: 1px solid#c3c3c3;">
+    <script type="text/javascript">
+        var c = document.getElementById("myCanvas");
+        var cxt = c.getContext("2d");
+        var img = new Image();
+        img.scr = "see.jpy";
+        cxt.drawImage(img, 0, 0);
+
+    </script>
+</canvas>
+</body>
+</html>

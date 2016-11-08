@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实例 - 圆形</title>
+</head>
+<body>
+<canvas id="myCanvas" width="300" height="400" style="border: 1px solid #aaaaaa;">
+</canvas>
+<script type="text/javascript">
+    var c=document.getElementById("myCanvas");
+    var cxt=c.getContext("2d")
+    cxt.fillStyle="#FF0000";
+    cxt.beginPath();
+    cxt.arc(80,19,18,0,Math.PI*2,true);
+    cxt.closePath();
+    cxt.fill();
+
+</script>
+</body>
+</html>
